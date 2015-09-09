@@ -12,8 +12,7 @@
 
 @interface SITLSlotsView ()
 
-@property (nonatomic, assign) int numberOfStrips;
-@property (nonatomic, assign) NSArray *items;
+@property (nonatomic, strong) NSArray *items;
 @property (nonatomic, strong) NSArray *strips;
 @property (nonatomic, strong) NSTimer *stopTimer;
 
@@ -34,6 +33,7 @@
     self = [super init];
     if(self) {
         _items = items;
+        [self prepareComponent];
     }
     return self;
 }
@@ -41,7 +41,7 @@
 -(instancetype)init {
     self = [super init];
     if(self) {
-        _items = [NSArray arrayWithObjects:[UIImage imageNamed:@"fruittype-avocado"], [UIImage imageNamed:@"fruittype-burrito"], [UIImage imageNamed:@"fruittype-skeleton"], nil];
+        [self prepareComponent];
     }
     return self;
 
@@ -50,7 +50,7 @@
 -(instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if(self) {
-        _items = [NSArray arrayWithObjects:[UIImage imageNamed:@"fruittype-avocado"], [UIImage imageNamed:@"fruittype-burrito"], [UIImage imageNamed:@"fruittype-skeleton"], nil];
+        [self prepareComponent];
     }
     return self;
 }
@@ -58,26 +58,31 @@
 -(instancetype)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if(self) {
-        self.clipsToBounds = YES;
-        
-        _items = [NSArray arrayWithObjects:[UIImage imageNamed:@"fruittype-avocado"], [UIImage imageNamed:@"fruittype-burrito"], [UIImage imageNamed:@"fruittype-skeleton"], nil];
-        _currentResultDictionary = [NSMutableDictionary dictionary];
-        
-        _numberOfStrips = 3;
-        
-        NSMutableArray *strips = [NSMutableArray array];
-        for (int i = 0; i < _numberOfStrips; i++) {
-            SITLSlotSpinner *strip = [[SITLSlotSpinner alloc] initWithItems:_items];
-
-            [self addSubview:strip];
-            [strips addObject:strip];
-        }
-        _strips = [NSArray arrayWithArray:strips];
-        
-        [self moveToInitialPosition];
-
+        [self prepareComponent];
     }
     return self;
+}
+
+-(void)prepareComponent {
+    self.clipsToBounds = YES;
+    
+    _items = [NSArray arrayWithObjects:[UIImage imageNamed:@"fruittype-avocado"], [UIImage imageNamed:@"fruittype-burrito"], [UIImage imageNamed:@"fruittype-skeleton"], nil];
+    _currentResultDictionary = [NSMutableDictionary dictionary];
+    
+    if(_numberOfStrips == 0) {
+        _numberOfStrips = 3;
+    }
+    
+    NSMutableArray *strips = [NSMutableArray array];
+    for (int i = 0; i < _numberOfStrips; i++) {
+        SITLSlotSpinner *strip = [[SITLSlotSpinner alloc] initWithItems:_items andSelectedIndex:arc4random_uniform((int)[self.items count]-1)];
+        
+        [self addSubview:strip];
+        [strips addObject:strip];
+    }
+    _strips = [NSArray arrayWithArray:strips];
+    
+    [self moveToInitialPosition];
 }
 
 #pragma mark - user interaction methods
@@ -92,7 +97,7 @@
     [self.currentResultDictionary removeAllObjects];
 
     for (SITLSlotSpinner *strip in self.strips) {
-        [strip startWithVelocity:( arc4random() % 100 / 200.0 ) + 0.5];
+        [strip startWithVelocity:( arc4random() % 100 / 200.0 ) + 0.2];
     }
 }
 
@@ -171,9 +176,7 @@
 
 -(void)setFrame:(CGRect)frame {
     [super setFrame:CGRectMake(frame.origin.x, frame.origin.y, 320.0f, 120.0f)];
-    
-    self.columnWidth = self.frame.size.width / 3.0f;
-    
+
     CGSize radii = CGSizeMake(15.0f, 15.0f);
     
     UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:self.bounds
@@ -197,16 +200,14 @@
 #pragma mark - animations and positioning
 
 -(void)moveToInitialPosition {
+    self.columnWidth = self.frame.size.width / self.numberOfStrips;
 
-    NSLog(@"::>> set initial position");
-    
     int i = 0;
     for (SITLSlotSpinner *strip in self.strips) {
         [strip setFrame:CGRectMake(self.columnWidth * i, 3.0f, self.columnWidth, self.frame.size.height-6.0f)];
 
         i++;
     }
-    
 }
 
 @end

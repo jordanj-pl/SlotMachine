@@ -10,7 +10,7 @@
 
 @interface SITLSlotSpinner : UIView
 
--(instancetype)initWithItems:(NSArray*)items;
+-(instancetype)initWithItems:(NSArray*)items andSelectedIndex:(int)selectedIndex;
 
 //velocity is number of seconds which takes movmenent through the entire length is strip
 -(void)startWithVelocity:(NSTimeInterval)velocity;

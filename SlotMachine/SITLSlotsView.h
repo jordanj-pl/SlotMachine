@@ -12,6 +12,8 @@ typedef void(^SITLSlotsSpinningCompletionBlock)(BOOL won, NSDictionary *result);
 
 @interface SITLSlotsView : UIView
 
+@property (nonatomic, assign) int numberOfStrips;
+
 //designated initializer
 -(instancetype)initWithItems:(NSArray*)items;
 

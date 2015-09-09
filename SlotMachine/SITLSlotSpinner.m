@@ -15,6 +15,7 @@
 @property (nonatomic, assign) BOOL spinning;
 
 @property (nonatomic, strong) NSArray *items;
+@property (nonatomic, assign) int initialIndex;
 
 @property (nonatomic, assign) CGFloat verticalCenter;
 @property (nonatomic, assign) CGFloat centeredPosition;
@@ -25,10 +26,11 @@
 
 @implementation SITLSlotSpinner
 
--(instancetype)initWithItems:(NSArray *)items {
+-(instancetype)initWithItems:(NSArray *)items andSelectedIndex:(int)selectedIndex {
     self = [super init];
     if(self) {
         _items = items;
+        _initialIndex = selectedIndex;
         
         if([_items count] < 3) {
             @throw [NSException exceptionWithName:@"Not enough elements" reason:@"At least 3 elements should be given in order for the component to work properly." userInfo:nil];
@@ -59,7 +61,7 @@
     }
     
     if(self.items) {
-        [self moveToInitialPositionWithItemCentered:arc4random_uniform((int)[self.subviews count]-1)];
+        [self moveToInitialPositionWithItemCentered:self.initialIndex];
     }
 
 }

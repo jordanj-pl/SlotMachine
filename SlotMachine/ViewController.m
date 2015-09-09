@@ -44,6 +44,9 @@
 
 -(IBAction)startSpinning:(id)sender {
 
+    UIButton *btn = sender;
+    
+    btn.enabled = NO;
     [self.slotsView startAndStopAfter:5 withCompletionBlock:^(BOOL won, NSDictionary *result) {
         [self.results insertObject:result atIndex:0];
         [self.resultsTable insertRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:0 inSection:0]] withRowAnimation:UITableViewRowAnimationTop];
@@ -51,6 +54,8 @@
         if(won) {
             [self performSegueWithIdentifier:@"wonSegue" sender:self];
         }
+        
+        btn.enabled = YES;
     }];
 }
 
