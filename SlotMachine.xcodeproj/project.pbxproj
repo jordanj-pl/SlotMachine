@@ -14,6 +14,20 @@
 		17832DE01B9EF79100B0E6EF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17832DDF1B9EF79100B0E6EF /* Images.xcassets */; };
 		17832DE31B9EF79100B0E6EF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17832DE11B9EF79100B0E6EF /* LaunchScreen.xib */; };
 		17832DEF1B9EF79200B0E6EF /* SlotMachineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17832DEE1B9EF79200B0E6EF /* SlotMachineTests.m */; };
+		17832DFB1B9EFCD000B0E6EF /* SITLSlotsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17832DFA1B9EFCD000B0E6EF /* SITLSlotsView.m */; };
+		17832E061B9F07DC00B0E6EF /* fruittype-avocado.png in Resources */ = {isa = PBXBuildFile; fileRef = 17832DFD1B9F07DC00B0E6EF /* fruittype-avocado.png */; };
+		17832E071B9F07DC00B0E6EF /* fruittype-avocado@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17832DFE1B9F07DC00B0E6EF /* fruittype-avocado@2x.png */; };
+		17832E081B9F07DC00B0E6EF /* fruittype-avocado@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17832DFF1B9F07DC00B0E6EF /* fruittype-avocado@3x.png */; };
+		17832E091B9F07DC00B0E6EF /* fruittype-burrito.png in Resources */ = {isa = PBXBuildFile; fileRef = 17832E001B9F07DC00B0E6EF /* fruittype-burrito.png */; };
+		17832E0A1B9F07DC00B0E6EF /* fruittype-burrito@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17832E011B9F07DC00B0E6EF /* fruittype-burrito@2x.png */; };
+		17832E0B1B9F07DC00B0E6EF /* fruittype-burrito@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17832E021B9F07DC00B0E6EF /* fruittype-burrito@3x.png */; };
+		17832E0C1B9F07DC00B0E6EF /* fruittype-skeleton.png in Resources */ = {isa = PBXBuildFile; fileRef = 17832E031B9F07DC00B0E6EF /* fruittype-skeleton.png */; };
+		17832E0D1B9F07DC00B0E6EF /* fruittype-skeleton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17832E041B9F07DC00B0E6EF /* fruittype-skeleton@2x.png */; };
+		17832E0E1B9F07DC00B0E6EF /* fruittype-skeleton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17832E051B9F07DC00B0E6EF /* fruittype-skeleton@3x.png */; };
+		17832E221B9F2EC200B0E6EF /* SITLSlotSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 17832E211B9F2EC200B0E6EF /* SITLSlotSpinner.m */; };
+		17832E241B9F872D00B0E6EF /* ResultsTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17832E231B9F872D00B0E6EF /* ResultsTableCellView.xib */; };
+		17832E271B9F88CB00B0E6EF /* SITLResultsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17832E261B9F88CB00B0E6EF /* SITLResultsTableViewCell.m */; };
+		17832E2A1B9FADC700B0E6EF /* SITLClaimPrizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17832E291B9FADC700B0E6EF /* SITLClaimPrizeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +54,24 @@
 		17832DE81B9EF79100B0E6EF /* SlotMachineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlotMachineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17832DED1B9EF79200B0E6EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17832DEE1B9EF79200B0E6EF /* SlotMachineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlotMachineTests.m; sourceTree = "<group>"; };
+		17832DF91B9EFCD000B0E6EF /* SITLSlotsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SITLSlotsView.h; sourceTree = "<group>"; };
+		17832DFA1B9EFCD000B0E6EF /* SITLSlotsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SITLSlotsView.m; sourceTree = "<group>"; };
+		17832DFD1B9F07DC00B0E6EF /* fruittype-avocado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fruittype-avocado.png"; sourceTree = "<group>"; };
+		17832DFE1B9F07DC00B0E6EF /* fruittype-avocado@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fruittype-avocado@2x.png"; sourceTree = "<group>"; };
+		17832DFF1B9F07DC00B0E6EF /* fruittype-avocado@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fruittype-avocado@3x.png"; sourceTree = "<group>"; };
+		17832E001B9F07DC00B0E6EF /* fruittype-burrito.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fruittype-burrito.png"; sourceTree = "<group>"; };
+		17832E011B9F07DC00B0E6EF /* fruittype-burrito@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fruittype-burrito@2x.png"; sourceTree = "<group>"; };
+		17832E021B9F07DC00B0E6EF /* fruittype-burrito@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fruittype-burrito@3x.png"; sourceTree = "<group>"; };
+		17832E031B9F07DC00B0E6EF /* fruittype-skeleton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fruittype-skeleton.png"; sourceTree = "<group>"; };
+		17832E041B9F07DC00B0E6EF /* fruittype-skeleton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fruittype-skeleton@2x.png"; sourceTree = "<group>"; };
+		17832E051B9F07DC00B0E6EF /* fruittype-skeleton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fruittype-skeleton@3x.png"; sourceTree = "<group>"; };
+		17832E201B9F2EC200B0E6EF /* SITLSlotSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SITLSlotSpinner.h; sourceTree = "<group>"; };
+		17832E211B9F2EC200B0E6EF /* SITLSlotSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SITLSlotSpinner.m; sourceTree = "<group>"; };
+		17832E231B9F872D00B0E6EF /* ResultsTableCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultsTableCellView.xib; sourceTree = "<group>"; };
+		17832E251B9F88CB00B0E6EF /* SITLResultsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SITLResultsTableViewCell.h; sourceTree = "<group>"; };
+		17832E261B9F88CB00B0E6EF /* SITLResultsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SITLResultsTableViewCell.m; sourceTree = "<group>"; };
+		17832E281B9FADC700B0E6EF /* SITLClaimPrizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SITLClaimPrizeViewController.h; sourceTree = "<group>"; };
+		17832E291B9FADC700B0E6EF /* SITLClaimPrizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SITLClaimPrizeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +113,7 @@
 		17832DD11B9EF79100B0E6EF /* SlotMachine */ = {
 			isa = PBXGroup;
 			children = (
+				17832DF81B9EF8D300B0E6EF /* UI Widgets */,
 				17832DD61B9EF79100B0E6EF /* AppDelegate.h */,
 				17832DD71B9EF79100B0E6EF /* AppDelegate.m */,
 				17832DD91B9EF79100B0E6EF /* ViewController.h */,
@@ -89,6 +122,11 @@
 				17832DDF1B9EF79100B0E6EF /* Images.xcassets */,
 				17832DE11B9EF79100B0E6EF /* LaunchScreen.xib */,
 				17832DD21B9EF79100B0E6EF /* Supporting Files */,
+				17832E231B9F872D00B0E6EF /* ResultsTableCellView.xib */,
+				17832E251B9F88CB00B0E6EF /* SITLResultsTableViewCell.h */,
+				17832E261B9F88CB00B0E6EF /* SITLResultsTableViewCell.m */,
+				17832E281B9FADC700B0E6EF /* SITLClaimPrizeViewController.h */,
+				17832E291B9FADC700B0E6EF /* SITLClaimPrizeViewController.m */,
 			);
 			path = SlotMachine;
 			sourceTree = "<group>";
@@ -117,6 +155,42 @@
 				17832DED1B9EF79200B0E6EF /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		17832DF81B9EF8D300B0E6EF /* UI Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				17832DFC1B9F035D00B0E6EF /* Slots View */,
+			);
+			name = "UI Widgets";
+			sourceTree = "<group>";
+		};
+		17832DFC1B9F035D00B0E6EF /* Slots View */ = {
+			isa = PBXGroup;
+			children = (
+				17832E0F1B9F286100B0E6EF /* Wheel Spinner */,
+				17832DF91B9EFCD000B0E6EF /* SITLSlotsView.h */,
+				17832DFA1B9EFCD000B0E6EF /* SITLSlotsView.m */,
+			);
+			name = "Slots View";
+			sourceTree = "<group>";
+		};
+		17832E0F1B9F286100B0E6EF /* Wheel Spinner */ = {
+			isa = PBXGroup;
+			children = (
+				17832E201B9F2EC200B0E6EF /* SITLSlotSpinner.h */,
+				17832E211B9F2EC200B0E6EF /* SITLSlotSpinner.m */,
+				17832DFD1B9F07DC00B0E6EF /* fruittype-avocado.png */,
+				17832DFE1B9F07DC00B0E6EF /* fruittype-avocado@2x.png */,
+				17832DFF1B9F07DC00B0E6EF /* fruittype-avocado@3x.png */,
+				17832E001B9F07DC00B0E6EF /* fruittype-burrito.png */,
+				17832E011B9F07DC00B0E6EF /* fruittype-burrito@2x.png */,
+				17832E021B9F07DC00B0E6EF /* fruittype-burrito@3x.png */,
+				17832E031B9F07DC00B0E6EF /* fruittype-skeleton.png */,
+				17832E041B9F07DC00B0E6EF /* fruittype-skeleton@2x.png */,
+				17832E051B9F07DC00B0E6EF /* fruittype-skeleton@3x.png */,
+			);
+			name = "Wheel Spinner";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,9 +273,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17832E0B1B9F07DC00B0E6EF /* fruittype-burrito@3x.png in Resources */,
+				17832E081B9F07DC00B0E6EF /* fruittype-avocado@3x.png in Resources */,
 				17832DDE1B9EF79100B0E6EF /* Main.storyboard in Resources */,
 				17832DE31B9EF79100B0E6EF /* LaunchScreen.xib in Resources */,
+				17832E0D1B9F07DC00B0E6EF /* fruittype-skeleton@2x.png in Resources */,
+				17832E061B9F07DC00B0E6EF /* fruittype-avocado.png in Resources */,
+				17832E071B9F07DC00B0E6EF /* fruittype-avocado@2x.png in Resources */,
+				17832E0A1B9F07DC00B0E6EF /* fruittype-burrito@2x.png in Resources */,
+				17832E091B9F07DC00B0E6EF /* fruittype-burrito.png in Resources */,
+				17832E0E1B9F07DC00B0E6EF /* fruittype-skeleton@3x.png in Resources */,
 				17832DE01B9EF79100B0E6EF /* Images.xcassets in Resources */,
+				17832E0C1B9F07DC00B0E6EF /* fruittype-skeleton.png in Resources */,
+				17832E241B9F872D00B0E6EF /* ResultsTableCellView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +305,11 @@
 			files = (
 				17832DDB1B9EF79100B0E6EF /* ViewController.m in Sources */,
 				17832DD81B9EF79100B0E6EF /* AppDelegate.m in Sources */,
+				17832DFB1B9EFCD000B0E6EF /* SITLSlotsView.m in Sources */,
+				17832E221B9F2EC200B0E6EF /* SITLSlotSpinner.m in Sources */,
+				17832E271B9F88CB00B0E6EF /* SITLResultsTableViewCell.m in Sources */,
 				17832DD51B9EF79100B0E6EF /* main.m in Sources */,
+				17832E2A1B9FADC700B0E6EF /* SITLClaimPrizeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

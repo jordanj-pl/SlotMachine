@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="105" id="9P8-jn-4pe" customClass="SITLResultsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="379" height="105"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9P8-jn-4pe" id="TQU-po-4xC">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z4r-UX-kIa">
+                        <rect key="frame" x="164" y="27" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Ru3-E3-hFx"/>
+                            <constraint firstAttribute="width" constant="50" id="bty-Sk-TyL"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ThK-xe-lUy">
+                        <rect key="frame" x="28" y="27" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="BBC-W3-VPX"/>
+                            <constraint firstAttribute="height" constant="50" id="FSX-Gd-umg"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iXF-eG-G8i">
+                        <rect key="frame" x="301" y="27" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="89e-qQ-ejv"/>
+                            <constraint firstAttribute="width" constant="50" id="sxo-hD-7T7"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="z4r-UX-kIa" secondAttribute="centerY" id="EM6-RD-KPn"/>
+                    <constraint firstAttribute="centerY" secondItem="iXF-eG-G8i" secondAttribute="centerY" id="W0c-3w-b5K"/>
+                    <constraint firstItem="ThK-xe-lUy" firstAttribute="leading" secondItem="TQU-po-4xC" secondAttribute="leadingMargin" constant="20" id="Yav-Mj-b8D"/>
+                    <constraint firstItem="z4r-UX-kIa" firstAttribute="centerY" secondItem="ThK-xe-lUy" secondAttribute="centerY" id="l2p-vf-fIK"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="iXF-eG-G8i" secondAttribute="trailing" constant="20" id="vAP-d8-8zr"/>
+                    <constraint firstAttribute="centerX" secondItem="z4r-UX-kIa" secondAttribute="centerX" id="zom-L4-l69"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="firstItemImage" destination="ThK-xe-lUy" id="Yrx-aD-oZP"/>
+                <outlet property="secondItemImage" destination="z4r-UX-kIa" id="83o-f2-D4K"/>
+                <outlet property="thirdItemImage" destination="iXF-eG-G8i" id="Iwl-UQ-VOi"/>
+            </connections>
+            <point key="canvasLocation" x="315.5" y="-64.5"/>
+        </tableViewCell>
+    </objects>
+</document>
